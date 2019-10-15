@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 // IMPORT MONGOOSE
 
-mongoose.connect(process.env.MONGODB_PROD, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise ,  useUnifiedTopology: true }).then(
+mongoose.connect(process.env.MONGODB, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise ,  useUnifiedTopology: true }).then(
   () => { console.log('Mongoose connection open.') },
   err => { console.error(`${err.message}`) }
 );
