@@ -1,0 +1,1 @@
+web: node ./utils/loadSurvey && node start

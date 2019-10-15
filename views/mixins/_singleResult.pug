@@ -1,0 +1,27 @@
+mixin _singleResult(result = {})
+    .menu
+      button.btn.btn-link(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        span.sr-only Toggle Dropdown
+        img(src='/images/menu.svg', alt='Menu')
+      .dropdown-menu
+        a.dropdown-item(href=`/result/${result._id}/download/xls`) Download .xls
+        //- a.dropdown-item(href=`/result/${result._id}/send`) Send
+    .details
+      h2.title Survey ##{result.count}
+      - var creation = h.moment(result.createdAt).format("dddd, MMMM Do YYYY, h:mm a");
+      .small.completed Created #{creation}
+      .answers
+        each ans, index in result.responses
+          hr
+          .answer
+            h6 Question ##{index+1}
+            p=questions.survey[index].text
+            if questions.survey[index].options
+              - var opts = h.optionMaker(questions.survey[index].options)
+              p.small.text-muted Options #{opts}
+              - var choice = h.optionPicker(questions.survey[index].options, ans)
+              each resp in choice
+                p=resp
+            else
+              - var pretty = h.optionPrettyify(index, questions.survey[index], ans.answer)
+              p=pretty

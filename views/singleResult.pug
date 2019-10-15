@@ -1,0 +1,26 @@
+extends layout
+include mixins/_singleResult.pug
+
+block content
+  .inner
+    .pg-title
+      //- h1 Survey ##{result.count} - Results
+    .details
+      if result.complete = true
+        .result.result-success.single-result
+          div
+            img.success-icon.rounded-circle.check(src='/images/checkmark.svg', alt='Completed')
+            p Completed
+          +_singleResult(result)
+      else if result.complete = false && result.responses.length > 1
+        .result.result-caution.single-result
+          div
+            img.caution-icon.rounded-circle.check(src='/images/notification.svg', alt='Warning')
+            p Not Completed
+          +_singleResult(result)
+      else
+        .result.result-warning.single-result
+          div
+            img.warning-icon.rounded-circle.check(src='/images/hand-stop.svg', alt='Warning')
+            p Not Completed
+          +_singleResult(result)

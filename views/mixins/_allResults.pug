@@ -1,0 +1,24 @@
+mixin _allResults(result = {})
+      .details
+        h5.title ##{result.beta}
+        - var crtd = h.moment(result.createdAt).fromNow()
+        p.small.completed Created #{crtd}.
+        hr.my-4.result-divide
+        .actions
+          .action
+            a(href=href=`/result/${result._id}/view`)
+              img.details-icon(src='/images/view-show.svg', alt='View')
+          .action
+            a(href=href=`/result/${result._id}/download/xls`)
+              img.details-icon(src='/images/download.svg', alt='Download')
+          //- .action
+          //-   a(href=href=`/result/${result._id}/send`)
+          //-     img.details-icon(src='/images/send.svg', alt='Send')
+      .menu
+        button.btn.btn-link(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          span.sr-only Toggle Dropdown
+          img(src='/images/menu.svg', alt='Kiwi standing on oval')
+        .dropdown-menu
+          a.dropdown-item(href=`/result/${result._id}/view`) View Responses
+          a.dropdown-item(href=`/result/${result._id}/download/xls`) Download
+          //- a.dropdown-item(href=`/result/${result._id}/send`) Send

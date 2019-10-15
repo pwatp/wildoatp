@@ -1,0 +1,9 @@
+*.env
+/node_modules
+/.cache
+/public
+*.pdf
+*.xls
+*.xlsx
+*.txt
+!.env.txt

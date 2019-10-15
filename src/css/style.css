@@ -1,0 +1,273 @@
+/* roboto-regular - latin_latin-ext */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin_latin-ext-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v18-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin_latin-ext-regular.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+
+/* roboto-italic - latin_latin-ext */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin_latin-ext-italic.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Italic'), local('Roboto-Italic'), url('../fonts/roboto-v18-latin_latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin_latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin_latin-ext-italic.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin_latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin_latin-ext-italic.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+
+/* roboto-900 - latin_latin-ext */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v18-latin_latin-ext-900.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'), url('../fonts//roboto-v18-latin_latin-ext-900.eot?#iefix'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin_latin-ext-900.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin_latin-ext-900.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin_latin-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin_latin-ext-900.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto';
+  font-weight: 900;
+  margin: 0;
+}
+/* SPLASH PAGE */
+
+.bkd {
+  background: linear-gradient(110deg, rgba(249, 61, 102, .65), rgba(109, 71, 217, .65)), url("https://upload.wikimedia.org/wikipedia/commons/c/cc/Point_Richmond%2C_Richmond%2C_California.jpg");
+  background-size: cover, cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.summary-container {
+  padding-bottom: 5em;
+}
+
+.summary-card {
+  margin-bottom: 1.5em;
+  min-height: 100px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 16px #ccc;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.summary-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.summary-left {
+  background-color: goldenrod;
+  padding: 0.5em;
+}
+
+.summary-right {
+  background-color: orchid;
+}
+
+.splash-container {
+  padding: 5em 0;
+  height: 100vh;
+}
+
+.splash-content {
+  display: grid;
+  height: 100%;
+  align-content: center;
+}
+
+.splash-feature {
+  text-align: center;
+}
+
+.login-content {
+  box-shadow: 0 0 8px #ccc;
+  background-color: #fff;
+  padding: 2em;
+  align-self: start;
+}
+
+.reg-link {
+  color: rgb(15, 184, 173);
+}
+
+#mymap {
+  height: 500px;
+  width: 100%;
+}
+
+.result {
+  margin-bottom: 1.5em;
+  padding: 0.25em;
+  display: grid;
+  min-height: 100px;
+  width: 100%;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 4px;
+  box-shadow: 0 0 16px #ccc;
+  background-color: #fff;
+  border-right: red;
+  padding: 1em;
+}
+
+.single-result {
+  grid-template-columns: 1fr 1fr;
+}
+
+.single-result .details {
+  grid-column: span 2;
+  margin-top: 2em;
+}
+
+.result-caution {
+  border-left: rgba(255, 215, 0, 0.75) solid 3px;
+}
+
+.result-warning {
+  border-left: rgba(255, 69, 0, 0.75) solid 3px;
+}
+
+.result-success {
+  border-left: rgba(0, 128, 0, 0.75) solid 3px;
+}
+
+.title {
+  grid-column: 2;
+  font-weight: 900;
+  display: grid;
+  align-content: center;
+}
+
+.success-icon {
+  align-self: center;
+  background-color: rgba(0, 128, 0, 0.75);
+  box-shadow: 0 0 16px #ccc;
+}
+
+.caution-icon {
+  align-self: center;
+  background-color: rgba(255, 215, 0, 0.75);
+  box-shadow: 0 0 16px #ccc;
+}
+
+.warning-icon {
+  align-self: center;
+  background-color: rgba(255, 69, 0, 0.75);
+  box-shadow: 0 0 16px #ccc;
+}
+
+.check {
+  max-width: 2.5em;
+  padding: 0.5em;
+}
+
+.result-status {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding-right: 1em;
+}
+
+.pg-title {
+  margin: 2em 0 1em;
+  border-bottom: black solid 3px;
+  font-family: 'Roboto Black';
+}
+
+.results-menu {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 0.25em;
+  justify-content: start;
+  grid-gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.results-menu-item p {
+  font-family: 'Roboto Black';
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  text-align: right;
+  height: 1.5em;
+}
+
+.menu img {
+  height: 1.5em;
+  text-align: right;
+}
+
+.menu button {
+  padding: 0;
+}
+
+.details-icon {
+  height: 1em;
+  width: 1em;
+  text-align: center;
+}
+
+.details p, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.details .actions {
+  display: grid;
+  grid-auto-flow: column;
+  width: 75px;
+  margin-top: 0.25em;
+  /* justify-items: center; */
+  grid-gap: 0.5em;
+}
+
+.actions .action {
+  justify-self: left;  
+}
+
+.result-divide {
+  margin: 0.5em 0 !important;
+}
+
+.table thead th {
+  border-top: 0;
+}
+
+.answer {
+  margin-bottom: 1em;  
+}
+
+@media print {
+  .print-hide {
+    display: none;
+  }
+  .print-break {
+    page-break-before: always
+  }
+}
