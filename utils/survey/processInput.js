@@ -57,16 +57,6 @@ exports.processInput = async (survey, questions, input) => {
   }
   else if (currentQuestion.type === 'txt') {
     questionResponse.answer = input;
-    // var num = Number(input);
-    // if (isNaN(num)) {
-    //   if (survey.spanish === true) {
-    //     return { 'Err': 'Algo salió mal. Por favor proporcione un número válido.' };
-    //   } else {
-    //     return { 'Err': 'Something went wrong. Please provide a valid number.' };
-    //   }
-    // } else {
-    //   questionResponse.answer = num;
-    // }
   }
   else if (currentQuestion.type === 'num') {
     var num = Number(input);

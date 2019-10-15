@@ -37,7 +37,7 @@ exports.handleNextQuestion = async (survey, questions, input) => {
 		errMsg += Object.values(srvy)[0];
 		const rspn = respond.response(survey, questions, errMsg);
 		await message.asMessage(errMsg, survey.phone, 1.5);
-		await message.asMessage(rspn, survey.phone, 3);
+		await message.asMessage(rspn, survey.phone, 1.5);
 		return;
 	};
 
@@ -53,7 +53,7 @@ exports.handleNextQuestion = async (survey, questions, input) => {
 	const rspns = respond.response(svs, questions);
 	if (Array.isArray(rspns) && rspns !== null) {
 		await asyncForEach(rspns, async (rspn) => {
-			await message.asMessage(rspn, svs.phone, 3);
+			await message.asMessage(rspn, svs.phone, 1.5);
 		});
 	} else {
 		await message.asMessage(rspns, svs.phone, 1.5);

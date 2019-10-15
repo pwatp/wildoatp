@@ -1,9 +1,9 @@
 module.exports = {
 	"title": "Spanish",
-	"intro": 'Thank you for taking the survey for the City of Wildomar Active Transportation Plan (ATP)!\r\nYour comments will help provide recommendations to improve walking and biking in Wildomar.\r\n',
-	"instructions": 'INSTRUCTIONS: The survey will ask a series of questions and take around 5 minutes to complete.\r\nPlease text your responses as instructed for each question.',
-	"disclaimer": 'DISCLAIMER: We respect your privacy and will do our best to protect your personal information.\r\nYour data will only be used for purposes related to this project and will not be shared or distributed.',
-	"close": 'Thank you for completing the survey!',
+	"intro": 'Gracias por completar la encuesta del Plan de Transporte Activo de la Ciudad de Wildomar.\r\nSus comentarios ayudarán a proporcionar recomendaciones para mejorar accesso peatonal y pasearse en bicicleta en Wildomar.\r\n',
+	"instructions": 'INSTRUCTIONS: La encuesta hará una serie de preguntas y tomará alrededor de 5 minutos para completar.\r\nEnvíe sus respuestas por mensaje de texto según las instrucciones para cada pregunta.',
+	"disclaimer": 'DISCLAIMER: Respetamos su privacidad y haremos todo lo posible para proteger su información personal.\r\nSus datos solo se utilizarán para fines relacionados con este proyecto y no se compartirán ni distribuirán.',
+	"close": 'Gracias por completar la encuesta!',
 	"questions": [
 		// 0
 		{
