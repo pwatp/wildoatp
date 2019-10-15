@@ -13,165 +13,165 @@ module.exports = {
 		},
 		// 1
 		{
-			"text": "Where do you live?",
+			"text": "¿En dónde vive?",
 			"status": "Open",
 			"type": "address",
 			"location": 'home'
 		},
 		// 2
 		{
-			"text": "On a typical day, how do you travel around your community to shop, run errands, eat, or for social or recreational purposes?",
+			"text": "¿En un día típico, como viaja alrededor de su comunidad para comprar, comer, hacer diligencias, o fines sociales y recreativos?",
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Walk',
-				'Bike',
-				'Public Transportation (bus, train, etc.)',
-				'Taxi or Shared Vehicle (Lyft, Uber, Carpool)',
-				'Motorcycle or Scooter',
-				'Carpool',
-				'Drive Alone',
-				'Combination',
-				'Other'
+				'Caminar',
+				'Bicicleta',
+				'Transporte Público',
+				'Taxi o Vehículo Compartido (Lyft, Uber, etc.)',
+				'Motocicleta o Scooter',
+				'Viaje Compartido',
+				'Manejar Solo',
+				'Combinación',
+				'Otro'
 			]
 		},
 		// 3
 		{
-			"text": "Do you currently work?",
+			"text": "¿Actualmente trabaja?",
 			"status": "Open",
 			"type": "boolean"
 		},
 		// 4
 		{
-			"text": "Where do you work?",
+			"text": "¿Cuál es la dirección de su trabajo?",
 			"status": "Open",
 			"type": "address",
 			"location": 'work',
 			"skips": [
 				{
 					'qNum': 3,
-					'criteria': [true]
+					'criteria': [false]
 				}
 			]
 		},
 		// 5
 		{
-			"text": "How do you commute to work each day?",
+			"text": "¿Como normalmente viaja a su trabajo?",
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Walk',
-				'Bike',
-				'Public Transportation (bus, train, etc.)',
-				'Taxi or Shared Vehicle (Lyft, Uber, Carpool)',
-				'Motorcycle or Scooter',
-				'Carpool',
-				'Drive Alone',
-				'Combination',
-				'Other'
+				'Caminar',
+				'Bicicleta',
+				'Transporte Público',
+				'Taxi o Vehículo Compartido (Lyft, Uber, etc.)',
+				'Motocicleta o Scooter',
+				'Viaje Compartido',
+				'Manejar Solo',
+				'Combinación',
+				'Otro'
 			],
 			"skips": [
 				{
 					'qNum': 3,
-					'criteria': [true]
+					'criteria': [false]
 				}
 			]
 		},
 		// 6
 		{
-			"text": "Do you currently go to school?",
+			"text": "¿Actualmente va a una escuela? ",
 			"status": "Open",
 			"type": "boolean"
 		},
 		// 7
 		{
-			"text": "Where do you go to school?",
+			"text": "¿Cuál es el nombre de su escuela?",
 			"status": "Open",
 			"type": "address",
 			"location": 'school',
 			"skips": [
 				{
 					'qNum': 6,
-					'criteria': [true]
+					'criteria': [false]
 				}
 			]
 		},
 		// 8
 		{
-			"text": "How do you normally travel to school each day?",
+			"text": "¿Como normalmente viaja a la escuela?",
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Walk',
-				'Bike',
-				'Public Transportation (bus, train, etc.)',
-				'Taxi or Shared Vehicle (Lyft, Uber, Carpool)',
-				'Motorcycle or Scooter',
-				'Carpool',
-				'Drive Alone',
-				'Combination',
-				'Other'
+				'Caminar',
+				'Bicicleta',
+				'Transporte Público',
+				'Taxi o Vehículo Compartido (Lyft, Uber, etc.)',
+				'Motocicleta o Scooter',
+				'Viaje Compartido',
+				'Manejar Solo',
+				'Combinación',
+				'Otro'
 			],
 			"skips": [
 				{
 					'qNum': 6,
-					'criteria': [true]
+					'criteria': [false]
 				}
 			]
 		},
 		// 9
 		{
-			"text": "In general, how easy/difficult do you feel it is to walk in Wildomar?",
+			"text": "¿En general, que tan fácil o difícil se le hace caminar en Wildomar?",
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Very Easy',
-				'Somewhat Easy',
-				'Neutral',
-				'Somewhat Difficult',
-				'Very Difficult'
+				'Muy Fácil', 
+				'Algo Fácil', 
+				'Neutral', 
+				'Algo Difícil', 
+				'Muy Difícil'
 			]
 		},
 		// 10
 		{
-			"text": 'What are the biggest challenges for walking in Wildomar? What keeps you from walking more?',
+			"text": '¿Cuáles son algunos de los obstáculos para caminar en Wildomar? ¿Que lo impide de caminar más? ',
 			"status": "Open",
 			"type": "txt"
 		},
 		// 11
 		{
-			"text": "In general, how easy/difficult do you feel it is to bike in Wildomar?",
+			"text": "¿En general, que tan fácil o difícil se le hace usar bicicleta en Wildomar?",
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Very Easy',
-				'Somewhat Easy',
-				'Neutral',
-				'Somewhat Difficult',
-				'Very Difficult'
+				'Muy Fácil', 
+				'Algo Fácil', 
+				'Neutral', 
+				'Algo Difícil', 
+				'Muy Difícil'
 			]
 		},
 		// 12
 		{
-			"text": 'What are the biggest challenges for biking in Wildomar? What keeps you from biking more?',
+			"text": '¿Cuáles son algunos de los obstáculos para usar bicicleta en Wildomar? ¿Que lo impide de usar bicicleta más?',
 			"status": "Open",
 			"type": "txt"
 		},
 		// 13
 		{
-			"text": "What is your age?",
+			"text": "¿Cuál es su edad?",
 			"status": "Open",
 			"type": "num"
 		},
 		// 14
 		{
-			"text": "Would you like to stay informed about the Wildomar Active Transportation Plan, including future opportunities to get involved?",
+			"text": "¿Quisiera estar informado de el Plan de Transportación Activa de Wildomar, incluyendo futuras oportunidades para involucrarse?",
 			"status": "Open",
 			"type": "boolean"
 		},
 		// 15
 		{
-			"text": "What is your email address?",
+			"text": "¿Cuál es su correo electrónico?",
 			"status": "Open",
 			"type": "email",
 			"skips": [

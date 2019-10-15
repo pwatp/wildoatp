@@ -10,9 +10,9 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise; //USE ES6 PROMISES see:http://mongoosejs.com/docs/promises.html#plugging-in-your-own-promises-library
 
 // DB CONNECTION
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, promiseLibrary: global.Promise }).then(
-  () => { console.log('🔗 👌 🔗 👌 🔗 👌 🔗 👌 Mongoose connection open.') },
-  err => { console.error(`🙅 🚫 🙅 🚫 🙅 🚫 🙅 🚫 → ${err.message}`) }
+mongoose.connect(process.env.MONGODB_URI, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise , 'useUnifiedTopology': true }).then(
+  () => { console.log('Mongoose connection open.') },
+  err => { console.error(`${err.message}`) }
 );
 
 async function asyncForEach(array, callback) {

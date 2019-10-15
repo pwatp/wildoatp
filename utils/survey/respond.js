@@ -32,14 +32,17 @@ exports.response = (answers, questions, err) => {
     if (currentQuestion.type === 'single') {
       responseMessage += '\r\nResponda con numero:';
     }
+    if (currentQuestion.type === 'txt') {
+      responseMessage += '\r\nPor favor escriba su respuesta.';
+    }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'home') {
-      responseMessage += '\r\nProporcione un código postal de 5 dígitos o el nombre de su vecindario y ciudad ("Old Town, Pittsburg").';
+      responseMessage += '\r\nProporcione un código postal de 5 dígitos o el nombre de su vecindario y ciudad.';
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'work') {
-      responseMessage += '\r\nIndique el nombre del lugar donde trabaja y un código postal de 5 dígitos ("Starbucks, 94520") o nombre y ciudad ("Dow Chemical, Pittsburg"). Si trabaja desde su casa, responda “CASA.”';
+      responseMessage += '\r\nIndique el nombre del lugar donde trabaja y un código postal de 5 dígitos o nombre y ciudad. Si trabaja desde su casa, responda “CASA.”';
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'school') {
-      responseMessage += '\r\nIndique el nombre del lugar donde va a la escuela y un código postal de 5 dígitos ("Los Medanos College, 94565") o nombre y ciudad ("Antioch High School, Antioch").';
+      responseMessage += '\r\nIndique el nombre del lugar donde va a la escuela y un código postal de 5 dígitos o nombre y ciudad.';
     }
     if (currentQuestion.type === 'multi') {
       responseMessage += `\r\nElija sus ${currentQuestion.limit} principales. Responda con un número:`;
@@ -53,6 +56,9 @@ exports.response = (answers, questions, err) => {
     }
     if (currentQuestion.type === 'single') {
       responseMessage += '\r\nReply with number:';
+    }
+    if (currentQuestion.type === 'txt') {
+      responseMessage += '\r\nPlease type your response below.';
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'home') {
       responseMessage += '\r\nPlease provide a 5-digit zip code or the name of your neighborhood and city.';
