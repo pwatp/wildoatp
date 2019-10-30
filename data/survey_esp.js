@@ -79,7 +79,7 @@ module.exports = {
 		},
 		// 6
 		{
-			"text": "¿Actualmente va a una escuela? ",
+			"text": "¿Actualmente va a una escuela (**TL**K-12 or college**TL**)? ",
 			"status": "Open",
 			"type": "boolean"
 		},
@@ -125,10 +125,10 @@ module.exports = {
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Muy Fácil', 
-				'Algo Fácil', 
-				'Neutral', 
-				'Algo Difícil', 
+				'Muy Fácil',
+				'Algo Fácil',
+				'Neutral',
+				'Algo Difícil',
 				'Muy Difícil'
 			]
 		},
@@ -144,10 +144,10 @@ module.exports = {
 			"status": "Open",
 			"type": "single",
 			"options": [
-				'Muy Fácil', 
-				'Algo Fácil', 
-				'Neutral', 
-				'Algo Difícil', 
+				'Muy Fácil',
+				'Algo Fácil',
+				'Neutral',
+				'Algo Difícil',
 				'Muy Difícil'
 			]
 		},
@@ -159,24 +159,42 @@ module.exports = {
 		},
 		// 13
 		{
+			"text": "**TL**Are you aware of any of the trailheads and bike routes in Wildomar?**TL**",
+			"status": "Open",
+			"type": "boolean"
+		},
+		// 14
+		{
+			"text": '**TL**Please type the name/locations of trailheads and bike routes you aware of.**TL**',
+			"status": "Open",
+			"type": "txt",
+			"skips": [
+				{
+					'qNum': 13,
+					'criteria': [false]
+				}
+			]
+		},
+		// 15
+		{
 			"text": "¿Cuál es su edad?",
 			"status": "Open",
 			"type": "num"
 		},
-		// 14
+		// 16
 		{
 			"text": "¿Quisiera estar informado de el Plan de Transportación Activa de Wildomar, incluyendo futuras oportunidades para involucrarse?",
 			"status": "Open",
 			"type": "boolean"
 		},
-		// 15
+		// 17
 		{
 			"text": "¿Cuál es su correo electrónico?",
 			"status": "Open",
 			"type": "email",
 			"skips": [
 				{
-					'qNum': 14,
+					'qNum': 16,
 					'criteria': [false]
 				}
 			]

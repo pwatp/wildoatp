@@ -26,7 +26,7 @@ module.exports = {
 			"options": [
 				'Walk',
 				'Bike',
-				'Public Transportation (bus, train, etc.)',
+				'Public Transportation',
 				'Taxi or Shared Vehicle (Lyft, Uber, Carpool)',
 				'Motorcycle or Scooter',
 				'Carpool',
@@ -79,7 +79,7 @@ module.exports = {
 		},
 		// 6
 		{
-			"text": "Do you currently go to school?",
+			"text": "Do you currently go to school (K-12 or college)?",
 			"status": "Open",
 			"type": "boolean"
 		},
@@ -159,24 +159,42 @@ module.exports = {
 		},
 		// 13
 		{
+			"text": "Are you aware of any of the trailheads and bike routes in Wildomar?",
+			"status": "Open",
+			"type": "boolean"
+		},
+		// 14
+		{
+			"text": 'Please type the name/locations of trailheads and bike routes you aware of.',
+			"status": "Open",
+			"type": "txt",
+			"skips": [
+				{
+					'qNum': 13,
+					'criteria': [false]
+				}
+			]
+		},
+		// 15
+		{
 			"text": "What is your age?",
 			"status": "Open",
 			"type": "num"
 		},
-		// 14
+		// 16
 		{
 			"text": "Would you like to stay informed about the Wildomar Active Transportation Plan, including future opportunities to get involved?",
 			"status": "Open",
 			"type": "boolean"
 		},
-		// 15
+		// 17
 		{
 			"text": "What is your email address?",
 			"status": "Open",
 			"type": "email",
 			"skips": [
 				{
-					'qNum': 14,
+					'qNum': 16,
 					'criteria': [false]
 				}
 			]

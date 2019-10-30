@@ -9,11 +9,15 @@ var Questions = require('../models/Questions');
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise; //USE ES6 PROMISES see:http://mongoosejs.com/docs/promises.html#plugging-in-your-own-promises-library
 
-// DB CONNECTION
-mongoose.connect(process.env.MONGODB_URI, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise , 'useUnifiedTopology': true }).then(
+let dbPath = '';
+if (process.env.NODE_ENV === 'development') { dbPath = process.env.MONGODB_IVORY_URI; }
+else { dbPath = process.env.MONGODB_URI; }
+// IMPORT MONGOOSE
+mongoose.connect(dbPath, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise , 'useUnifiedTopology': true }).then(
   () => { console.log('Mongoose connection open.') },
   err => { console.error(`${err.message}`) }
 );
+
 
 async function asyncForEach(array, callback) {
   for (let index = 0; index < array.length; index++) {

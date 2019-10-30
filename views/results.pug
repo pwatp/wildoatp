@@ -7,18 +7,19 @@ block content
       h1 All Responses
     .details
       each result in results
-        if result.completed = true
+        if result.complete
           .result.result-success
             .result-status
               img.success-icon.rounded-circle.check(src='/images/checkmark.svg', alt='Success')
             +_allResults(result)
-        else if result.completed = false && result.responses.length > 1
-          .result.result-caution
-            .result-status
-              img.caution-icon.rounded-circle.check(src='/images/notification.svg', alt='Caution')
-            +_allResults(result)
         else
-          .result.result-warning
-            .result-status
-              img.warning-icon.rounded-circle.check(src='/images/hand-stop.svg', alt='Warning')
-            +_allResults(result)
+          if result.responses.length > 1
+            .result.result-caution
+              .result-status
+                img.caution-icon.rounded-circle.check(src='/images/notification.svg', alt='Caution')
+              +_allResults(result)
+          else
+            .result.result-warning
+              .result-status
+                img.warning-icon.rounded-circle.check(src='/images/hand-stop.svg', alt='Warning')
+              +_allResults(result)

@@ -30,7 +30,8 @@ exports.getSurvey = async (req, res, next) => {
 
 exports.resultById = async (req, res, next) => {
   const result = await Answers.findById(req.params.id);
-  req.body.result = result;  
+  // res.json(result)
+  req.body.result = result;
   next();
 }
 

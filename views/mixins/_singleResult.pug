@@ -7,7 +7,7 @@ mixin _singleResult(result = {})
         a.dropdown-item(href=`/result/${result._id}/download/xls`) Download .xls
         //- a.dropdown-item(href=`/result/${result._id}/send`) Send
     .details
-      h2.title Survey ##{result.count}
+      h2.title Survey ##{result.beta}
       - var creation = h.moment(result.createdAt).format("dddd, MMMM Do YYYY, h:mm a");
       .small.completed Created #{creation}
       .answers

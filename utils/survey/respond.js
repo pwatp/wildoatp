@@ -33,7 +33,9 @@ exports.response = (answers, questions, err) => {
       responseMessage += '\r\nResponda con numero:';
     }
     if (currentQuestion.type === 'txt') {
-      responseMessage += '\r\nPor favor escriba su respuesta.';
+      if (answers.responses.length != 14) {
+        responseMessage += '\r\nPor favor escriba su respuesta.';
+      }
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'home') {
       responseMessage += '\r\nProporcione un código postal de 5 dígitos o el nombre de su vecindario y ciudad.';
@@ -58,7 +60,9 @@ exports.response = (answers, questions, err) => {
       responseMessage += '\r\nReply with number:';
     }
     if (currentQuestion.type === 'txt') {
-      responseMessage += '\r\nPlease type your response below.';
+      if (answers.responses.length != 14) {
+        responseMessage += '\r\nPlease type your response below.';
+      }
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'home') {
       responseMessage += '\r\nPlease provide a 5-digit zip code or the name of your neighborhood and city.';

@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
+
+let dbPath = '';
+if (process.env.NODE_ENV === 'development') { dbPath = process.env.MONGODB_IVORY_URI; }
+else { dbPath = process.env.MONGODB_URI; }
 // IMPORT MONGOOSE
-mongoose.connect(process.env.MONGODB_URI, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise , 'useUnifiedTopology': true }).then(
+mongoose.connect(dbPath, { 'useNewUrlParser': true, 'useFindAndModify': false, 'promiseLibrary': global.Promise , 'useUnifiedTopology': true }).then(
   () => { console.log('Mongoose connection open.') },
   err => { console.error(`${err.message}`) }
 );

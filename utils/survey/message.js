@@ -1,13 +1,28 @@
-const twilio = require('twilio')(process.env.TWILLIO_SID, process.env.TWILLIO_TOKEN);
+
+let TW_SID = '';
+let TW_TOKEN = '';
+let TW_NUM = '';
+
+if (process.env.NODE_ENV === 'development') {
+  TW_SID = process.env.TWILIO_BETA_SID;
+  TW_TOKEN = process.env.TWILIO_BETA_TOKEN;
+  TW_NUM = process.env.TWILIO_BETA_NUM;}
+else {
+  TW_SID = process.env.TWILIO_SID;
+  TW_TOKEN = process.env.TWILIO_TOKEN;
+  TW_NUM = process.env.TWILIO_NUM;
+}
+
+const twilio = require('twilio')(TW_SID, TW_TOKEN);
 
 exports.sendMessage = (msg, ph) => {
   twilio.messages
-  .create({
-    to: ph,
-    from: process.env.TWILLIO_NUM,
-    body: msg,
-  })
-  .done();  
+    .create({
+      to: ph,
+      from: TW_NUM,
+      body: msg,
+    })
+    .done();
 };
 
 
@@ -22,7 +37,7 @@ exports.asMessage = async (msg, ph, delay) => {
     await getCoffee(delay);
     await twilio.messages.create({
       to: ph,
-      from: process.env.TWILLIO_NUM,
+      from: TW_NUM,
       body: msg,
     });
   } catch (error) {
