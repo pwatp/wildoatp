@@ -40,8 +40,9 @@ exports.response = (answers, questions, err) => {
     if (currentQuestion.type === 'address' && currentQuestion.location === 'home') {
       responseMessage += '\r\nProporcione un código postal de 5 dígitos o el nombre de su vecindario y ciudad.';
     }
+    // TRANSLATION NEEDED
     if (currentQuestion.type === 'address' && currentQuestion.location === 'work') {
-      responseMessage += '\r\nIndique el nombre del lugar donde trabaja y un código postal de 5 dígitos o nombre y ciudad. Si trabaja desde su casa, responda “CASA.”';
+      responseMessage += '\r\nPor favor, proporcione la ubicación de su lugar de trabajo, ya sea a través de un código postal de 5 dígitos o el nombre de la ciudad. Si trabaja desde casa, responda "CASA".';
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'school') {
       responseMessage += '\r\nIndique el nombre del lugar donde va a la escuela y un código postal de 5 dígitos o nombre y ciudad.';
@@ -68,7 +69,7 @@ exports.response = (answers, questions, err) => {
       responseMessage += '\r\nPlease provide a 5-digit zip code or the name of your neighborhood and city.';
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'work') {
-      responseMessage += '\r\nPlease provide the name of the place where you work and a 5-digit zip code or name and city. If you work from home, reply “HOME”.';
+      responseMessage += '\r\nPlease provide the location of where you work, either through a 5-digit zip code or name of city. If you work from home, reply “HOME”.';
     }
     if (currentQuestion.type === 'address' && currentQuestion.location === 'school') {
       responseMessage += '\r\nPlease provide the name of the place where you go to school and a 5-digit zip code or name and city.';

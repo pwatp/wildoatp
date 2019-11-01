@@ -1,6 +1,6 @@
 module.exports = {
 	"title": "Spanish",
-	"intro": 'Gracias por completar la encuesta del Plan de Transporte Activo de la Ciudad de Wildomar.\r\nSus comentarios ayudarán a proporcionar recomendaciones para mejorar accesso peatonal y pasearse en bicicleta en Wildomar.\r\n',
+	"intro": 'Gracias por completar la encuesta del Plan de Movilidad Sostenible de la Ciudad de Wildomar.\r\nSus comentarios ayudarán a proporcionar recomendaciones para mejorar las opciones de transporte en Wildomar, como caminar, andar en bicicleta y tomar el transporte público.\r\n',
 	"instructions": 'INSTRUCTIONS: La encuesta hará una serie de preguntas y tomará alrededor de 5 minutos para completar.\r\nEnvíe sus respuestas por mensaje de texto según las instrucciones para cada pregunta.',
 	"disclaimer": 'DISCLAIMER: Respetamos su privacidad y haremos todo lo posible para proteger su información personal.\r\nSus datos solo se utilizarán para fines relacionados con este proyecto y no se compartirán ni distribuirán.',
 	"close": 'Gracias por completar la encuesta!',
@@ -79,7 +79,7 @@ module.exports = {
 		},
 		// 6
 		{
-			"text": "¿Actualmente va a una escuela (**TL**K-12 or college**TL**)? ",
+			"text": "¿Actualmente va a una escuela (primaria, secundaria, preparatoria o universidad)? ",
 			"status": "Open",
 			"type": "boolean"
 		},
@@ -159,13 +159,13 @@ module.exports = {
 		},
 		// 13
 		{
-			"text": "**TL**Are you aware of any of the trailheads and bike routes in Wildomar?**TL**",
+			"text": "¿Conoces alguno de los senderos y rutas en bicicleta en Wildomar?",
 			"status": "Open",
 			"type": "boolean"
 		},
 		// 14
 		{
-			"text": '**TL**Please type the name/locations of trailheads and bike routes you aware of.**TL**',
+			"text": 'Por favor, escriba el nombre / ubicaciones de los senderos y rutas en bicicleta que conoce.',
 			"status": "Open",
 			"type": "txt",
 			"skips": [
@@ -183,7 +183,7 @@ module.exports = {
 		},
 		// 16
 		{
-			"text": "¿Quisiera estar informado de el Plan de Transportación Activa de Wildomar, incluyendo futuras oportunidades para involucrarse?",
+			"text": "¿Quisiera estar informado de el Plan de Movilidad Sostenible de Wildomar, incluyendo oportunidades futuras para involucrarse?",
 			"status": "Open",
 			"type": "boolean"
 		},

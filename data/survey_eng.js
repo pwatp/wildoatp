@@ -1,6 +1,6 @@
 module.exports = {
 	"title": "English",
-	"intro": 'Thank you for taking the survey for the City of Wildomar Active Transportation Plan (ATP)!\r\nYour comments will help provide recommendations to improve walking and biking in Wildomar.\r\n',
+	"intro": 'Thank you for taking the survey for the City of Wildomar Sustainablle Mobility Plan!\r\nYour comments will help provide recommendations to improve transportation options in Wildomar, including walking, biking, and taking public transit.\r\n',
 	"instructions": 'INSTRUCTIONS: The survey will ask a series of questions and take around 5 minutes to complete.\r\nPlease text your responses as instructed for each question.',
 	"disclaimer": 'DISCLAIMER: We respect your privacy and will do our best to protect your personal information.\r\nYour data will only be used for purposes related to this project and will not be shared or distributed.',
 	"close": 'Thank you for completing the survey!',
@@ -183,7 +183,7 @@ module.exports = {
 		},
 		// 16
 		{
-			"text": "Would you like to stay informed about the Wildomar Active Transportation Plan, including future opportunities to get involved?",
+			"text": "Would you like to stay informed about the Wildomar Sustainable Mobility Plan, including future opportunities to get involved?",
 			"status": "Open",
 			"type": "boolean"
 		},
