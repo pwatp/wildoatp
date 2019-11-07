@@ -23,6 +23,13 @@ router.get('/results'
     , pageControl.results
 );
 
+router.get('/results/export'
+    , apiControl.allResults
+    , questionControl.engQuestions
+    , xlsControl.allXls
+);
+
+
 router.get('/result/:id/view'
     , responseControl.resultById
     , questionControl.engQuestions

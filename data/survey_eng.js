@@ -1,6 +1,6 @@
 module.exports = {
 	"title": "English",
-	"intro": 'Thank you for taking the survey for the City of Wildomar Sustainablle Mobility Plan!\r\nYour comments will help provide recommendations to improve transportation options in Wildomar, including walking, biking, and taking public transit.\r\n',
+	"intro": 'Thank you for taking the survey for the City of Wildomar Sustainable Mobility Plan!\r\nYour comments will help provide recommendations to improve transportation options in Wildomar, including walking, biking, and taking public transit.\r\n',
 	"instructions": 'INSTRUCTIONS: The survey will ask a series of questions and take around 5 minutes to complete.\r\nPlease text your responses as instructed for each question.',
 	"disclaimer": 'DISCLAIMER: We respect your privacy and will do our best to protect your personal information.\r\nYour data will only be used for purposes related to this project and will not be shared or distributed.',
 	"close": 'Thank you for completing the survey!',
@@ -177,24 +177,43 @@ module.exports = {
 		},
 		// 15
 		{
+			"text": "In general, how easy/difficult do you feel it is to drive in Wildomar?",
+			"status": "Open",
+			"type": "single",
+			"options": [
+				'Very Easy',
+				'Somewhat Easy',
+				'Neutral',
+				'Somewhat Difficult',
+				'Very Difficult'
+			]
+		},
+		// 16
+		{
+			"text": 'What are the biggest challenges for driving in Wildomar?',
+			"status": "Open",
+			"type": "txt"
+		},
+		// 17
+		{
 			"text": "What is your age?",
 			"status": "Open",
 			"type": "num"
 		},
-		// 16
+		// 18
 		{
 			"text": "Would you like to stay informed about the Wildomar Sustainable Mobility Plan, including future opportunities to get involved?",
 			"status": "Open",
 			"type": "boolean"
 		},
-		// 17
+		// 19
 		{
 			"text": "What is your email address?",
 			"status": "Open",
 			"type": "email",
 			"skips": [
 				{
-					'qNum': 16,
+					'qNum': 18,
 					'criteria': [false]
 				}
 			]

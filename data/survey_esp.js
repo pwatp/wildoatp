@@ -175,26 +175,46 @@ module.exports = {
 				}
 			]
 		},
+
 		// 15
+		{
+			"text": "¿En general, que tan fácil o difícil se le conducir el automóvil en Wildomar?",
+			"status": "Open",
+			"type": "single",
+			"options": [
+				'Muy Fácil',
+				'Algo Fácil',
+				'Neutral',
+				'Algo Difícil',
+				'Muy Difícil'
+			]
+		},
+		// 16
+		{
+			"text": '¿Cuáles son algunos de los obstáculos para conducir el automóvil en Wildomar?',
+			"status": "Open",
+			"type": "txt"
+		},
+		// 17
 		{
 			"text": "¿Cuál es su edad?",
 			"status": "Open",
 			"type": "num"
 		},
-		// 16
+		// 18
 		{
 			"text": "¿Quisiera estar informado de el Plan de Movilidad Sostenible de Wildomar, incluyendo oportunidades futuras para involucrarse?",
 			"status": "Open",
 			"type": "boolean"
 		},
-		// 17
+		// 19
 		{
 			"text": "¿Cuál es su correo electrónico?",
 			"status": "Open",
 			"type": "email",
 			"skips": [
 				{
-					'qNum': 16,
+					'qNum': 18,
 					'criteria': [false]
 				}
 			]

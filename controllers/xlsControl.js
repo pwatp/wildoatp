@@ -187,7 +187,6 @@ exports.allXls = (req, res) => {
       Question18: booty[17],
       Question19: booty[18],
       Question20: booty[19],
-      Question21: booty[20],
     }
     megaBooty.push(pretty);
   });
@@ -201,6 +200,6 @@ exports.allXls = (req, res) => {
   var mi = today.getMinutes();
   var s = today.getSeconds();
   const theDate = y + "-" + m + "-" + d + "-" + h + mi;
-  fs.writeFileSync(`${theDate}_richmond-results.xlsx`, xls, 'binary');
-  res.download(`${theDate}_richmond-results.xlsx`);
+  fs.writeFileSync(`${theDate}_wildomar-results.xlsx`, xls, 'binary');
+  res.download(`${theDate}_wildomar-results.xlsx`);
 }
