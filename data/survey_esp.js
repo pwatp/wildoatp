@@ -178,7 +178,7 @@ module.exports = {
 
 		// 15
 		{
-			"text": "¿En general, que tan fácil o difícil se le conducir el automóvil en Wildomar?",
+			"text": "¿En general, que tan fácil o difícil sientes manejando en Wildomar?",
 			"status": "Open",
 			"type": "single",
 			"options": [
@@ -191,7 +191,7 @@ module.exports = {
 		},
 		// 16
 		{
-			"text": '¿Cuáles son algunos de los obstáculos para conducir el automóvil en Wildomar?',
+			"text": '¿Cuáles son los mayores desafíos para manejar en Wildomar?',
 			"status": "Open",
 			"type": "txt"
 		},
